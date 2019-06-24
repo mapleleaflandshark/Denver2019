@@ -6,7 +6,6 @@ jQuery(document).ready(function(){
 		var token = document.getElementById("__RequestVerificationToken").value;
 		jQuery(updateThis).blur(function(){
 			try {
-				var updateThis = jQuery("input[id$='___TollFree']");
 				var newMobile = updateThis.val();
 				jQuery.ajax(baseUrl + "/api/party/" + id, {
 					type: "GET",
